@@ -1,0 +1,133 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+/*..Header NavBar...*/
+#header{
+    position:relative;
+    background-image: url('./images/Background.jpg');
+    background-position:center center;
+    background-size:cover;
+    height: 100vh;
+}
+#nav-bar{
+    position: sticky;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    padding:2rem;
+}
+#nav-bar > ul{
+    padding:0;
+    margin:0;
+    width:30%;
+    display:flex;
+    justify-content: space-between;
+
+}
+#nav-bar > ul >li{
+    list-style-type: none;
+    padding:0.5rem;
+    border-radius:0.5rem;
+}
+#nav-bar > ul >li >a{
+    text-decoration: none;
+    color: inherit;
+}
+#section-A-grid{
+    padding:0;
+    margin:0;
+    display: grid;
+    grid-column-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+#section-B{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    margin:1rem;
+    grid-gap:1rem;
+}
+.sb-item{
+    border:1px solid black;
+    height:30vh;
+}
+/*...
+    End of Header NavBar
+...*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*...
+    Mobile design
+...*/ 
+@media only screen and (max-width: 720px) {
+
+    /*..Main Body...*/
+    #main{
+        padding:1rem 3rem;
+    }
+    /*..Header NavBar...*/
+    #header{
+        position:relative;
+        background-image: url('./images/Background.jpg');
+        background-position:center center;
+        background-size:cover;
+        height: 50vh;
+        color:white;
+    }
+    #nav-bar{
+        display:grid;
+        grid-gap:1rem;
+        grid-template-columns: 1fr;
+    }
+    #nav-bar > img{
+        padding:1rem;
+        text-align: center;
+    }
+    #nav-bar > ul{
+        padding:0;
+        margin:0;
+        width:100%;
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #nav-bar > ul > li{
+    border:1px solid white;
+    }
+    #section-A-grid{
+        display:grid;
+        grid-template-columns:1fr;
+    }
+    #section-B{
+        display:grid;
+        grid-template-columns:1fr;
+        margin:1rem;
+        grid-gap:1rem;
+    }
+    .sb-item{
+        border:1px solid black;
+        height:500px;
+    }
+    /*...
+        End of Main Body
+    ...*/
+
+
+
+  }
